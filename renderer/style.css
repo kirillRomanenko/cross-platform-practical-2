@@ -1,0 +1,9 @@
+#play {
+    margin-top: 5%;
+    margin-left: 45%;
+}
+
+.bg-image {
+    height: 500px;
+    background: url('../img/background.jpg') no-repeat 100% 100%;
+}
