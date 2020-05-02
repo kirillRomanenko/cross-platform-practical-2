@@ -8,7 +8,7 @@ function main() {
             nodeIntegration: true
         }
     })
-    window.webContents.openDevTools();
+    // window.webContents.openDevTools();
     window.loadFile('./renderer/index.html');
 
     let playWindow;
@@ -22,6 +22,7 @@ function main() {
                     nodeIntegration: true
                 }
             });
+            playWindow.webContents.openDevTools();
             playWindow.loadFile('./renderer/play.html');
             playWindow.on('closed', () => {
                 playWindow = null
