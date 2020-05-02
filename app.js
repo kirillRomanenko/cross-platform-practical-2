@@ -22,7 +22,7 @@ function main() {
                     nodeIntegration: true
                 }
             });
-            playWindow.webContents.openDevTools();
+            // playWindow.webContents.openDevTools();
             playWindow.loadFile('./renderer/play.html');
             playWindow.on('closed', () => {
                 playWindow = null
