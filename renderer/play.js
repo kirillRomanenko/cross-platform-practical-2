@@ -21,7 +21,6 @@ document.addEventListener("keydown", moveUp);
 
 function moveUp() {
     yPos -= 25;
-    // fly.play();
 }
 
 // Создание блоков
@@ -61,12 +60,10 @@ function draw() {
                 || yPos + bird.height >= pipe[i].y + pipeUp.height + gap)) {
 
             location.reload(); // Перезагрузка страницы
-            // ipcRenderer.send('reload-game');
         }
 
         if (pipe[i].x == 5) {
             score++;
-            // score_audio.play();
         }
     }
 
